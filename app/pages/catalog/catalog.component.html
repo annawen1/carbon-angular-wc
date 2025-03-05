@@ -3,17 +3,17 @@
 <div style="margin-top:10rem">
     <p class="subtitle">Country selector: Web component</p>
     <div class="dropdown">
-       <cds-dropdown
+       <cds-custom-dropdown
           [title]="'Web component'"
             [label]="'Select country'"
            >
-          <cds-dropdown-item
+          <cds-custom-dropdown-item
             *ngFor="let item of dropdownItems"
             [value]="item.content"
             [selected]="item.selected"
           >
             {{ item.content }}
-          </cds-dropdown-item>
-           </cds-dropdown>
+          </cds-custom-dropdown-item>
+           </cds-custom-dropdown>
     </div>
  </div>
