@@ -1289,9 +1289,9 @@
     "@ibm/telemetry-js" "^1.5.0"
 
 "@carbon/ibm-products-styles@^2.55.0":
-  version "2.57.0"
-  resolved "https://registry.yarnpkg.com/@carbon/ibm-products-styles/-/ibm-products-styles-2.57.0.tgz#f421b784e0f468ec98b1027ef8e76435254b1f3f"
-  integrity sha512-1968KtQVLxZJHleN6AZgtnIItIzLPt9RWgjOozWrivQbLax0LCDb8UgPRjteg3+xlLqD9ezqEC1KiqduyAWEbQ==
+  version "2.56.0"
+  resolved "https://registry.yarnpkg.com/@carbon/ibm-products-styles/-/ibm-products-styles-2.56.0.tgz#41e4742950403040489565565ac40f71e84ba7e0"
+  integrity sha512-yITBuNwEotrFIvsb3eEAQxeA79n9WDQMVbrnHyqpIWI4gI3mu+2Z1sa424aJuk4cXjh62DEPrt4+RgizRi9vUw==
   dependencies:
     "@ibm/telemetry-js" "^1.8.0"
 
@@ -3576,9 +3576,9 @@ caniuse-lite@^1.0.30001464, caniuse-lite@^1.0.30001688:
   integrity sha512-LoPe/D7zioC0REI5W73PeR1e1MLCipRGq/VkovJnd6Df+QVqT+vT33OXCp8QUd7kA7RZrHWxb1B36OQKI/0gOA==
 
 carbon-components-angular@^5.15.0:
-  version "5.57.4"
-  resolved "https://registry.yarnpkg.com/carbon-components-angular/-/carbon-components-angular-5.57.4.tgz#6207dda68e5c507202a13de3a1c08f7f8148f833"
-  integrity sha512-Vyuk3n4hXABvnCXXLvY1H541Ws2LA3eMMoA0x+WK80oYa4dJ+1nSbH+QU6ICHlbgAyxOhfF092bMMxBokVejOQ==
+  version "5.57.3"
+  resolved "https://registry.yarnpkg.com/carbon-components-angular/-/carbon-components-angular-5.57.3.tgz#228e9b670243cd1ed6ecdecaa0387c75e6f6dfaa"
+  integrity sha512-BPXTly5/Ph8A3MAcfh1W54NklkZ3zwNIB8MQ+AxChlXqhH0ofIUX2QSS766ZmfWgE5MLOXQCAqNzXCbuOwM/Yg==
   dependencies:
     "@carbon/icon-helpers" "10.37.0"
     "@carbon/icons" "11.14.0"
