@@ -24,7 +24,7 @@
     "@angular/router": "^16.2.10",
     "@carbon/icons": "^11.28.0",
     "@carbon/styles": "^1.40.0",
-    "@carbon/web-components": "^2.20.0",
+    "@carbon/web-components": "file:./cwc-package.tgz",
     "carbon-components-angular": "^5.15.0",
     "core-js": "^3.9.1",
     "rxjs": "^6.5.3",

@@ -45,32 +45,32 @@
 	</div>
 
 	<div style="display: flex; gap: 2rem; margin-top: 1rem">
-		<cds-button
-		  kind="primary"
-		  size="lg"
-		  (click)="openTearsheet = true">
-		  Open tearsheet
-		</cds-button>
-		<cds-button
-		  kind="primary"
-		  size="lg"
-		  (click)="openModal= true">
-		  Open Modal
-		</cds-button>
+		<cds-custom-button
+		kind="primary"
+		size="lg"
+		(click)="openTearsheet()">
+		Open tearsheet
+	</cds-custom-button>
+	<cds-custom-button
+		kind="primary"
+		size="lg"
+		(click)="openWebComponentsModal()">
+		Open Modal
+	</cds-custom-button>
 	</div>
-	 <c4p-tearsheet [open]="openTearsheet">
+	 <c4p-tearsheet id="tearsheet">
 		<!-- Content -->
 		<h5>Tearsheet content</h5>
-	
+
 		Hello world!!
-	  
+
 		<!-- subtitle optional -->
 		<div slot="subtitle">
 		  Subtitle text which can provide more detail on the content being displayed.
 		</div>
-	  
+
 		<!-- Action toolbar optional -->
-		<cds-button slot="action-toolbar">Copy</cds-button>
+		<cds-custom-button slot="action-toolbar">Copy</cds-custom-button>
 		<cds-button
 		  slot="action-toolbar"
 		  aria-label="Settings"
@@ -80,7 +80,7 @@
 		  tooltip-text="Settings">
 		  Close
 		</cds-button>
-		<cds-button
+		<cds-custom-button
 		  slot="action-toolbar"
 		  aria-label="Delete"
 		  has-icon-only="true"
@@ -88,28 +88,28 @@
 		  size="sm"
 		  tooltip-text="Delete">
 		  Delete
-		</cds-button>
-	  
+		</cds-custom-button>
+
 		<!-- Tearsheet actions optional -->
 		<cds-button slot="actions" kind="ghost">Ghost</cds-button>
 		<cds-button slot="actions" kind="primary"></cds-button>
 	  </c4p-tearsheet>
-	  
-	  <cds-modal
-	  [open]="openModal"
+
+	  <cds-custom-modal
+	  id="web-components-modal"
 	>
-	  <cds-modal-header
+	  <cds-custom-modal-header
 	  >
-		<p class="cds--modal-header__label cds--type-delta">No service required</p>
-		<p class="cds--modal-header__heading cds--type-beta">A very simple modal</p>
-	  </cds-modal-header>
-	  <div class="cds--modal-content">
+		<p class="cds-custom--modal-header__label cds-custom--type-delta">No service required</p>
+		<p class="cds-custom--modal-header__heading cds-custom--type-beta">A very simple modal</p>
+	  </cds-custom-modal-header>
+	  <div class="cds-custom--modal-content">
 		<p>hello world</p>
 	  </div>
-	  <cds-modal-footer>
+	  <cds-custom-modal-footer>
 		Something!
-	  </cds-modal-footer>
-	</cds-modal>
+	  </cds-custom-modal-footer>
+	</cds-custom-modal>
 
 
 	<cds-tabs [isNavigation]="true">
