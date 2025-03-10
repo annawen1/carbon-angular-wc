@@ -24,13 +24,13 @@
     "@angular/router": "^16.2.10",
     "@carbon/icons": "^11.28.0",
     "@carbon/styles": "^1.40.0",
-    "@carbon/web-components": "^2.20.0",
+    "@carbon/web-components": "2.25.0-rc.0",
     "carbon-components-angular": "^5.15.0",
     "core-js": "^3.9.1",
     "rxjs": "^6.5.3",
     "tslib": "^2.8.1",
     "zone.js": "~0.13.3",
-    "@carbon/ibm-products-web-components": "^0.8.0-rc.0"
+    "@carbon/ibm-products-web-components": "file:./ibm-products-package.tgz"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.2.7",

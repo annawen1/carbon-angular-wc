@@ -45,58 +45,57 @@
 	</div>
 
 	<div style="display: flex; gap: 2rem; margin-top: 1rem">
-		<cds-button
-		  kind="primary"
-		  size="lg"
-		  (click)="openTearsheet = true">
-		  Open tearsheet
-		</cds-button>
-		<cds-button
-		  kind="primary"
-		  size="lg"
-		  (click)="openModal= true">
-		  Open Modal
-		</cds-button>
+		<cds-custom-button
+		kind="primary"
+		size="lg"
+		(click)="openTearsheet()">
+		Open tearsheet
+	</cds-custom-button>
+	<cds-custom-button
+		kind="primary"
+		size="lg"
+		(click)="openModal = true">
+		Open Modal
+	</cds-custom-button>
 	</div>
-	 <c4p-tearsheet [open]="openTearsheet">
-		<!-- Content -->
-		<h5>Tearsheet content</h5>
-	
-		Hello world!!
-	  
-		<!-- subtitle optional -->
-		<div slot="subtitle">
-		  Subtitle text which can provide more detail on the content being displayed.
-		</div>
-	  
-		<!-- Action toolbar optional -->
-		<cds-button slot="action-toolbar">Copy</cds-button>
-		<cds-button
-		  slot="action-toolbar"
-		  aria-label="Settings"
-		  has-icon-only="true"
-		  kind="ghost"
-		  size="sm"
-		  tooltip-text="Settings">
-		  Close
-		</cds-button>
-		<cds-button
-		  slot="action-toolbar"
-		  aria-label="Delete"
-		  has-icon-only="true"
-		  kind="ghost"
-		  size="sm"
-		  tooltip-text="Delete">
-		  Delete
-		</cds-button>
-	  
-		<!-- Tearsheet actions optional -->
-		<cds-button slot="actions" kind="ghost">Ghost</cds-button>
-		<cds-button slot="actions" kind="primary"></cds-button>
-	  </c4p-tearsheet>
-	  
-	  <cds-modal
-	  [open]="openModal"
+	<c4p-tearsheet id="tearsheet">
+    <!-- Content -->
+    <h5>Tearsheet content</h5>
+
+    Hello world!!
+
+    <!-- subtitle optional -->
+    <div slot="subtitle">
+      Subtitle text which can provide more detail on the content being displayed.
+    </div>
+
+    <!-- Action toolbar optional -->
+    <cds-custom-button slot="action-toolbar">Copy</cds-custom-button>
+    <cds-button
+      slot="action-toolbar"
+      aria-label="Settings"
+      has-icon-only="true"
+      kind="ghost"
+      size="sm"
+      tooltip-text="Settings">
+      Close
+    </cds-button>
+    <cds-custom-button
+      slot="action-toolbar"
+      aria-label="Delete"
+      has-icon-only="true"
+      kind="ghost"
+      size="sm"
+      tooltip-text="Delete">
+      Delete
+    </cds-custom-button>
+
+    <!-- Tearsheet actions optional -->
+    <cds-custom-button slot="actions" kind="ghost">Ghost</cds-custom-button>
+    <cds-custom-button slot="actions" kind="primary">Primary</cds-custom-button>
+    </c4p-tearsheet>
+
+	  <cds-modal id="angular-modal" [open]="openModal" (close)="openModal = false"
 	>
 	  <cds-modal-header
 	  >
