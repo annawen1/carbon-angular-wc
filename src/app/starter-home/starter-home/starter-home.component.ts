@@ -1,10 +1,9 @@
 import { DOCUMENT } from "@angular/common";
 import { Component, OnInit, Renderer2, inject } from "@angular/core";
 
-import '@carbon/ibm-products-web-components/es/components/tearsheet/index.js';
+import '@carbon/ibm-products-web-components/es-custom/components/tearsheet/index.js';
 // The following are used for slotted fields
 import '@carbon/web-components/es-custom/components/button/index.js';
-import '@carbon/web-components/es-custom/components/modal/index.js';
 
 @Component({
   selector: "app-starter-home",
@@ -136,17 +135,10 @@ export class StarterHomeComponent implements OnInit {
     },
   ];
   // openTearsheet = false;
-  // openModal = false;
+  openModal = false;
 
   private document = inject(DOCUMENT);
   private renderer = inject(Renderer2);
-
-  openWebComponentsModal() {
-    const modal = this.document.getElementById("web-components-modal");
-    if (modal) {
-      modal.setAttribute("open", "true");
-    }
-  }
 
   openTearsheet() {
     const modal = this.document.getElementById("tearsheet");
@@ -154,6 +146,13 @@ export class StarterHomeComponent implements OnInit {
       modal.setAttribute("open", "true");
     }
   }
+
+  // openAngularModal() {
+  //   const modal = this.document.getElementById("angular-modal");
+  //   if (modal) {
+  //     modal.setAttribute("open", "true");
+  //   }
+  // }
 
   ngOnInit() {
     // Apply default class to body

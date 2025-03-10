@@ -8,6 +8,7 @@ import {
 	IconModule,
 	IconService,
 	ListModule,
+	ModalModule,
 	RadioModule,
 	TabsModule,
 	TilesModule
@@ -29,7 +30,8 @@ import { StarterHomeRoutingModule } from './starter-home-routing.module';
 		RadioModule,
 		ButtonModule,
 		IconModule,
-		DropdownModule
+		DropdownModule,
+		ModalModule
 	],
 	declarations: [StarterHomeComponent],
 	schemas: [CUSTOM_ELEMENTS_SCHEMA]

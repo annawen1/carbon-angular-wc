@@ -54,62 +54,61 @@
 	<cds-custom-button
 		kind="primary"
 		size="lg"
-		(click)="openWebComponentsModal()">
+		(click)="openModal = true">
 		Open Modal
 	</cds-custom-button>
 	</div>
-	 <c4p-tearsheet id="tearsheet">
-		<!-- Content -->
-		<h5>Tearsheet content</h5>
+	<c4p-tearsheet id="tearsheet">
+    <!-- Content -->
+    <h5>Tearsheet content</h5>
 
-		Hello world!!
+    Hello world!!
 
-		<!-- subtitle optional -->
-		<div slot="subtitle">
-		  Subtitle text which can provide more detail on the content being displayed.
-		</div>
+    <!-- subtitle optional -->
+    <div slot="subtitle">
+      Subtitle text which can provide more detail on the content being displayed.
+    </div>
 
-		<!-- Action toolbar optional -->
-		<cds-custom-button slot="action-toolbar">Copy</cds-custom-button>
-		<cds-button
-		  slot="action-toolbar"
-		  aria-label="Settings"
-		  has-icon-only="true"
-		  kind="ghost"
-		  size="sm"
-		  tooltip-text="Settings">
-		  Close
-		</cds-button>
-		<cds-custom-button
-		  slot="action-toolbar"
-		  aria-label="Delete"
-		  has-icon-only="true"
-		  kind="ghost"
-		  size="sm"
-		  tooltip-text="Delete">
-		  Delete
-		</cds-custom-button>
+    <!-- Action toolbar optional -->
+    <cds-custom-button slot="action-toolbar">Copy</cds-custom-button>
+    <cds-button
+      slot="action-toolbar"
+      aria-label="Settings"
+      has-icon-only="true"
+      kind="ghost"
+      size="sm"
+      tooltip-text="Settings">
+      Close
+    </cds-button>
+    <cds-custom-button
+      slot="action-toolbar"
+      aria-label="Delete"
+      has-icon-only="true"
+      kind="ghost"
+      size="sm"
+      tooltip-text="Delete">
+      Delete
+    </cds-custom-button>
 
-		<!-- Tearsheet actions optional -->
-		<cds-button slot="actions" kind="ghost">Ghost</cds-button>
-		<cds-button slot="actions" kind="primary"></cds-button>
-	  </c4p-tearsheet>
+    <!-- Tearsheet actions optional -->
+    <cds-custom-button slot="actions" kind="ghost">Ghost</cds-custom-button>
+    <cds-custom-button slot="actions" kind="primary">Primary</cds-custom-button>
+    </c4p-tearsheet>
 
-	  <cds-custom-modal
-	  id="web-components-modal"
+	  <cds-modal id="angular-modal" [open]="openModal" (close)="openModal = false"
 	>
-	  <cds-custom-modal-header
+	  <cds-modal-header
 	  >
-		<p class="cds-custom--modal-header__label cds-custom--type-delta">No service required</p>
-		<p class="cds-custom--modal-header__heading cds-custom--type-beta">A very simple modal</p>
-	  </cds-custom-modal-header>
-	  <div class="cds-custom--modal-content">
+		<p class="cds--modal-header__label cds--type-delta">No service required</p>
+		<p class="cds--modal-header__heading cds--type-beta">A very simple modal</p>
+	  </cds-modal-header>
+	  <div class="cds--modal-content">
 		<p>hello world</p>
 	  </div>
-	  <cds-custom-modal-footer>
+	  <cds-modal-footer>
 		Something!
-	  </cds-custom-modal-footer>
-	</cds-custom-modal>
+	  </cds-modal-footer>
+	</cds-modal>
 
 
 	<cds-tabs [isNavigation]="true">
