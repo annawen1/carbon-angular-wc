@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import '@carbon/web-components/es/components/dropdown/index.js';
+import '@carbon/web-components/es-custom/components/dropdown/index.js';
 
 @Component({
 	selector: 'app-catalog',
